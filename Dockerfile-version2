@@ -1,0 +1,23 @@
+# Sử dụng node image phiên bản 14.17.6
+FROM node:14.17.6
+
+# Thiết lập thư mục làm việc
+WORKDIR /app
+
+# Sao chép package.json và package-lock.json vào thư mục /app
+COPY package.json package-lock.json ./
+
+# Cài đặt dependencies
+RUN npm install
+
+# Sao chép các file còn lại vào thư mục /app
+COPY . .
+
+# Build dự án
+RUN npm run build:stg
+
+# Khởi chạy ứng dụng
+CMD ["npm", "run", "serve", "--", "--host"]
+
+# Expose cổng 4173 (nếu dự án của bạn chạy trên cổng khác, hãy sửa cổng dưới đây)
+EXPOSE 4173

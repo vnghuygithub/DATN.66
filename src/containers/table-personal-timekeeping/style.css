@@ -1,0 +1,292 @@
+.cell-content2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #cdf1cb;
+  position: absolute;
+  padding: 5px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.off-shift{
+  background-color: white!important;
+}
+.cell-content2.active {
+  border: 2px solid red;
+}
+.cell-extra-hour {
+  color: #135336;
+  background: #aceccf;
+  border: 1px solid #135336;
+}
+.is-explain {
+  box-shadow: 0px 1px 3px rgba(32, 34, 35, 0.1),
+    0px 1px 2px rgba(32, 34, 35, 0.06) !important;
+  border-radius: 2px !important;
+}
+.is-explain-true,.approval_hour-1 {
+  background: #fdfdfd !important;
+  border: 1px solid #be9274 !important;
+  color: #be9274 !important;
+}
+.is-explain-false,.approval_hour-2 {
+  background: #aceccf !important;
+  border: 1px solid #135336 !important;
+  color: #135336 !important;
+}
+.table-wrapper{
+  overflow-x: auto;
+  width: 100%;
+}
+.ant-card-body{
+  padding:12px!important;
+}
+.ant-picker-calendar-date{
+  height: 200px !important;
+  overflow: hidden !important;
+}
+.ant-picker-calendar-date-value{
+  height: 50px!important;
+  background:  #28b255;
+
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: white !important;
+font-weight: 500 !important;
+}
+.ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date-content{
+  height: 149px !important;
+  overflow: hidden!important;
+  background-color: #eaf7e4;
+
+}
+.ant-picker-calendar-date{
+  font-size: 12px !important;
+  padding: 0!important;
+  margin: 2px 2px !important;
+}
+.time{
+  position: absolute;
+  right: 5px;
+  top: 16px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.mothly{
+  position: absolute;
+  left: 5px;
+  top: 16px;
+  color: white;
+
+}
+.number{
+  width: 33%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  z-index: 100;
+}
+
+.time-morning{
+  position: absolute;
+  width: 100%;
+  left: 39%;
+  top: 68px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+
+
+}
+.time-afternoon{
+  position: absolute;
+  right: 10px;
+  bottom: 14px;
+  font-weight: 500;
+
+}
+.shift_name{
+  position: absolute;
+  width: 100%;
+  left: 55%;
+  top: 65px;
+  font-weight: 500;
+ font-size: 18px;
+}
+.ant-picker-calendar-header .ant-picker-calendar-year-select{
+  display: none!important;
+}
+.ant-picker-calendar-header .ant-radio-group-outline{
+  display: none!important;
+
+}
+.ant-picker-calendar-month-select{
+  margin-right: 80px !important;
+}
+.backgroundHeader{
+  width: 100%;
+  height: 50px;
+  position: absolute ;
+  top: 0;
+  left: 0;
+
+background-color: #ffa241;
+}
+.backgroundBody{
+  width: 100%;
+  height: 100%;
+  position: absolute ;
+  top: 50px;
+  left: 0;
+background-color:#fff5ec;
+}
+.backgroundHeader2{
+  width: 100%;
+  height: 50px;
+  position: absolute ;
+  top: 0;
+  left: 0;
+background-color: gray;
+}
+.backgroundBody2{
+  width: 100%;
+  height: 100%;
+  position: absolute ;
+  top: 50px;
+  left: 0;
+background-color:lightgray;
+}
+.time-late{
+  width: 34%;
+  height: 84px;
+ // display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1000;
+  border-top: 1px solid #10965a;
+  position: absolute;
+  bottom: 0;
+  left: 33%;
+  padding-top:20px
+}
+.attendance_late{
+  width: 33%;
+  height: 84px;
+ // display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-right: 1px solid #10965a;
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+  z-index: 100;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top:20px
+}
+
+.leave_early{
+  width: 33%;
+  height: 84px;
+ // display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1000;
+  border-top: 1px solid #10965a;
+  border-left: 1px solid #10965a;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-top:20px
+}
+.ant-picker-content th{
+  display: none;
+}
+li{
+  list-style: none !important;
+
+}
+.weekly{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0!important;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  z-index: 10;
+
+}
+.weekly li{
+  width: 100%;
+  text-align: center;
+  font-style: 600;
+
+}
+
+.ant-picker-calendar-header{
+  padding: 0 0 40px 0 !important; 
+}
+
+/* .ant-card-small > .ant-card-head > .ant-card-head-wrapper > .ant-card-extra {
+  padding: 8px 0;
+  font-size: 14px;
+  display: flex;
+} */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Màu nền đen với độ trong suốt */
+  z-index: 999; /* Đảm bảo overlay nằm trên các phần tử khác */
+}
+.popup{
+  width:500px;
+  position:relative;
+  top:40%;
+ // right:50%;
+  background:white;
+  popup:relative;
+  padding:50px 24px;
+  margin-left:auto;
+  margin-right:auto;
+  margin:auto;
+  text-align:center;
+}
+.close-btn{
+  position:absolute;
+  top:0;
+  right:0;
+  padding:0px 8px;
+ border:none
+}
+.close-btn:hover{
+  cursor:pointer
+}
+.btn_shift{
+  margin-top:8px
+}

@@ -1,0 +1,54 @@
+export interface IEmployeeAllocation {
+  id: number;
+  name: string;
+  employee_ids: Array<any>;
+  employee_names: string;
+  company_id: Array<any>;
+  company_name: string;
+  department_id: Array<any>;
+  department_name: string;
+  state: string;
+  approved_date: string;
+  approved_by: Array<any>;
+  approve_by_name: string;
+  current_company_id: Array<any>;
+  current_company_name: string;
+  new_company_working_date: string;
+  severance_day_old_company: string;
+  create_date: string;
+  allocation_type: string;
+  new_department_working_date: string;
+  severance_day_old_department: string;
+  current_department_id: Array<any>;
+  contract_name: string;
+  date_end: string;
+  date_signed: string;
+  contract_type_id: Array<any>;
+  contract_type_name: string;
+  job_id: Array<any>;
+  job_name: string;
+  current_job_id: Array<any>;
+  current_job_name: string;
+  new_job_id_date: string;
+}
+export interface IEmployeeAllocationArgs {
+  allocation_type?: string;
+  current_department_id?: number;
+  current_company_id?: number | null;
+  company_id?: number | null;
+  department_id?: number;
+  state?: string;
+  create_date?: string;
+  approved_date?: string;
+  name?: string;
+  page_size?: number;
+  page_number?: number;
+  employee_ids?: Array<number>;
+  new_company_working_date?: string | null;
+  severance_day_old_company?: string | null;
+  contract_name?: string;
+  new_department_working_date?: string | null;
+  severance_day_old_department?: string | null;
+  job_id?: number;
+  [key: string]: any;
+}

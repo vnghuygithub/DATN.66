@@ -1,0 +1,38 @@
+.section{
+    margin: 20px;
+}
+.ant-card-small > .ant-card-head > .ant-card-head-wrapper > .ant-card-extra {
+  padding: 8px 0;
+  font-size: 14px;
+  display: flex; 
+  margin-right: 16px;
+}
+
+.flex-list{
+  display:flex !impotant
+}
+
+.date-space {
+  display: flex;
+  max-width: 180px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.date-space:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.date-space > :nth-child(1) {
+  font-weight: 500;
+  color: #B98868;
+}
+
+.date-space > :nth-child(2) {
+  width: 100px;
+  color: #B98868;
+}
+
+p{
+    color: #B98868;
+}
