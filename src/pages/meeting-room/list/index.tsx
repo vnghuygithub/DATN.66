@@ -390,9 +390,9 @@ const MeetingRoom: FC = () => {
                 <Button type="primary" onClick={showModal}>
                   Thông tin phòng họp
                 </Button>
-                {/* <Button type="primary" onClick={handleCreateRoom}>
+                <Button type="primary" onClick={handleCreateRoom}>
                   Thêm phòng họp
-                </Button> */}
+                </Button> 
                 <Button type="primary" onClick={handleConfirm}>
                   Duyệt đơn
                 </Button>
